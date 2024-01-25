@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* For Active Link */
+
+@layer base {
+    .active {
+        @apply text-primary
+    }
+}
+
+.content {
+    display: none;
+}
+
+.active-content {
+    display: block;
+}
+
+
+
+.active-tabs {
+    background: #24dee6;
+    padding: 10px;
+   
+}
+/* 
+   Work section start */
+
+   .work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.images12{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    background-position: center;
+    background-size: cover;
+}
+
+/* This will increse the size of the image once we hover it */
+.work:hover .images12{
+
+    transform: scale(1.1);
+    opacity: 0.9;
+
+}
+
+.work:hover .layer{
+    height: 100%;
+    backdrop-filter: blur(20px);
+}
+
+.layer{
+    text-align: center;
+    width: 100%;
+    height: 0%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6),#0eaaaf);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px ;
+    font-size: 14px;
+    transition: height 0.5s;
+    line-height: 22px;
+    
+}
+
+
+
+
+
+
